@@ -6,7 +6,7 @@ using UnityEngine;
 namespace mainFunctions
 {
 
-    public class hpManager
+    public class hpManager 
     {
         public void hpChange(GameObject objectToChange, int value, changeType valueChangeType)
         {
@@ -32,7 +32,8 @@ namespace mainFunctions
                     hp = (int)(hp * character.GetComponent<hp>().baseStats.multiplier);
                     break;
                 case attackType.player:
-                hp = (int)(hp*character.GetComponent<hp>().baseStats.hp);
+                case attackType.breakable:
+                    hp = (int)(hp*character.GetComponent<hp>().baseStats.hp);
                     break;
 
             }
@@ -50,6 +51,7 @@ namespace mainFunctions
         ranged,
         meele,
         player,
+        breakable,
     }
 
     public enum changeType

@@ -5,18 +5,18 @@ using mainFunctions;
 
 public class hp : MonoBehaviour
 {
+    
     hpManager _hpManager;
     public hp_SO baseStats;
     public int Hp;
     public float speed;
     public float damageMultiplier;
+
     // Start is called before the first frame update
     void Start()
     {
-        Hp = _hpManager.hpCorrection(gameObject);
+        //Hp = _hpManager.hpCorrection(gameObject);
         speed = baseStats.speed;
-        Rigidbody rb = GetComponent<Rigidbody>();
-        
     }
 
     // Update is called once per frame
