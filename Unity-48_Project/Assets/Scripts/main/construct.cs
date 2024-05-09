@@ -43,7 +43,14 @@ namespace mainFunctions
     }
     public class spawnManager
     {
-
+        public void spawnObject(GameObject objectToSpawn,Vector3 spawnPos,Quaternion spawnRotation)
+        {
+            MonoBehaviour.Instantiate(objectToSpawn, spawnPos, spawnRotation);
+        }
+        public void spawnObject(GameObject objectToSpawn, Vector3 spawnPos)
+        {
+            MonoBehaviour.Instantiate(objectToSpawn, spawnPos, Quaternion.identity);
+        }
     }
 
     public enum attackType
@@ -58,5 +65,32 @@ namespace mainFunctions
     {
         increase,
         deacrese,
+    }
+
+    public enum physicType
+    {
+        isActive,
+        notActive,
+    }
+    
+    public enum bulletType
+    {
+        armorPiercing,        
+        penetrating,
+        normal,
+        laser,
+        replenish,
+    }
+    public enum bulletSkill
+    {
+        enemyRadar,
+        smoke,
+        explosive,
+    }
+    public enum weaponType
+    {
+        machineGun,
+        heacyMechineGun,
+        lightManhineGun,
     }
 }
