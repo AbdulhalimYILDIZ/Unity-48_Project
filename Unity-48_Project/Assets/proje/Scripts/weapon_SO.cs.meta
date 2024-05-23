@@ -3,7 +3,10 @@ guid: ccb11b81afe0f964d9209deee4e5474e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fxSound: {instanceID: 0}
+  - Vfx: {fileID: 159918, guid: a0040bf7072bc2f4e82d887d50a9c5e2, type: 3}
+  - bullet: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb11b81afe0f964d9209deee4e5474e, type: 3}
+  m_Name: rifle
+  m_EditorClassIdentifier: 
+  fxSound: {fileID: 8300000, guid: e9f1bfd2f37465e44bb2ed56fb38ece9, type: 3}
+  Vfx: {fileID: 3010774611580861967, guid: 284ae7a7758dae0478a1e80d084a0e55, type: 3}
+  bullet: {fileID: 2111328588110082663, guid: 6992c618dfc7cdb40b698b2346b0c6f1, type: 3}
+  recoilTime: 0.2
+  reloadTime: 5

@@ -21,7 +21,7 @@ public class weapon : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            _spawnManager.spawnObject(bullet1,bulletPosObject.position);
+            //_spawnManager.spawnObject(bullet1,bulletPosObject.position);
 
         }
     }
